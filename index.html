@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студия</title>
 </head>
@@ -43,6 +45,7 @@
 
             <!-- Особенности -->
             <section class="features">
+                <div class="container">
                 <h2 class="title">Особенности</h2>
                 <ul class="list">
                     <li><h3 class="feature-title">Внимание к деталям</h3><p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
@@ -50,46 +53,60 @@
                     <li><h3 class="feature-title">Планирование</h3><p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
                     <li><h3 class="feature-title">Современные технологии</h3><p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
                 </ul>
+                </div>
             </section>
             
             <!-- Чем мы занимаемся -->
             <section class="work">
+                <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li><img src="images/img1.jpg" alt="Server code" width="370" /></li>
-                    <li><img src="images/img2.jpg" alt="Mobile App" width="370" /></li>
-                    <li><img src="images/img3.jpg" alt="Design" width="370" /></li>
+                    <li><img class="img-no-gap" src="images/img1.jpg" alt="Server code" width="370" /></li>
+                    <li><img class="img-no-gap" src="images/img2.jpg" alt="Mobile App" width="370" /></li>
+                    <li><img class="img-no-gap" src="images/img3.jpg" alt="Design" width="370" /></li>
                 </ul>
+                </div>
             </section>
             
             <!-- Наша команда -->
             <section class="team">
+                <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="list">
-                    <li>
-                        <img src="images/imgpd.jpg" alt="Product Designer" width="270" />
-                        <h3 class="member-title product-designer">Игорь Демьяненко</h3>
-                        <p class="text">Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="images/imgfd.jpg" alt="Frontend Developer" width="270" />
-                        <h3 class="member-title frontend-developer">Ольга Репина</h3>
-                        <p class="text">Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="images/imgmark.jpg" alt="Marketing" width="270" />
-                        <h3 class="member-title marketing">Николай Тарасов</h3>
-                        <p class="text">Marketing</p>
-                    </li>
-                    <li>
-                        <img src="images/imguid.jpg" alt="UI Designer" width="270" />
-                        <h3 class="member-title designer">Михаил Ермаков</h3>
-                        <p class="text">UI Designer</p>
-                    </li>
+                    <div class="card">
+                        <li>
+                            <img class="img-no-gap" src="images/imgpd.jpg" alt="Product Designer" width="270" />
+                            <h3 class="member-title product-designer">Игорь Демьяненко</h3>
+                            <p class="text">Product Designer</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <img class="img-no-gap" src="images/imgfd.jpg" alt="Frontend Developer" width="270" />
+                            <h3 class="member-title frontend-developer">Ольга Репина</h3>
+                            <p class="text">Frontend Developer</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <img class="img-no-gap" src="images/imgmark.jpg" alt="Marketing" width="270" />
+                            <h3 class="member-title marketing">Николай Тарасов</h3>
+                            <p class="text">Marketing</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <img class="img-no-gap" src="images/imguid.jpg" alt="UI Designer" width="270" />
+                            <h3 class="member-title designer">Михаил Ермаков</h3>
+                            <p class="text">UI Designer</p>
+                        </li>
+                    </div>
                 </ul>
+                </div>
             </section>
         </main>
         <footer class="footer">
+            <div class="container">
             <!-- Лого -->
             <a href="/" class="logo-footer">Web<span class="logo-white">Studio</span></a>
             <address>
@@ -102,6 +119,7 @@
                     <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </address>
+            </div>
         </footer>
     </div>
 </body>
