@@ -55,8 +55,10 @@ address {
   line-height: 24px;
 }
 
-.limit-box {
-  padding: 0 215px;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Logo */
