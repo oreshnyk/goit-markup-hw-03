@@ -15,23 +15,23 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container navigation">
             <!-- Главная навигация -->
-            <nav class="navigation">
+            <nav class="main-nav">
             <!-- Лого -->
                 <a href="/" class="logo-header">Web<span class="logo-black">Studio</span></a>
                 <!-- Навигация на другие страницы -->
                 <ul class="site-nav list">
-                    <li><a href="./index.html" class="link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li><a href="./contacts" class="link">Контакты</a></li>
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="./contacts" class="link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contact list">
                     <!-- Ссылка на адрес электронной почты  -->
-                <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <!-- Ссылка на телефонный номер -->
-                <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -39,14 +39,14 @@
 
             <!-- Кнопка в шапке -->
             <section class="hero">
-                <h1 class="hero-heading">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-heading">Эффективные решения <br> для вашего бизнеса</h1>
                 <button class="hero-button" type="button"><span class="button-center">Заказать услугу</span></button>
             </section>
 
             <!-- Особенности -->
-            <section class="features">
+            <section class="features section">
                 <div class="container">
-                <h2 class="title">Особенности</h2>
+                <!-- <h2 class="title">Особенности</h2> -->
                 <ul class="list">
                     <li><h3 class="feature-title">Внимание к деталям</h3><p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
                     <li><h3 class="feature-title">Пунктуальность</h3><p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
@@ -57,45 +57,45 @@
             </section>
             
             <!-- Чем мы занимаемся -->
-            <section class="work">
+            <section class="work section">
                 <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li><img class="img-no-gap" src="images/img1.jpg" alt="Server code" width="370" /></li>
-                    <li><img class="img-no-gap" src="images/img2.jpg" alt="Mobile App" width="370" /></li>
-                    <li><img class="img-no-gap" src="images/img3.jpg" alt="Design" width="370" /></li>
+                    <li class="item"><img class="img-no-gap" src="images/img1.jpg" alt="Server code" width="370" /></li>
+                    <li class="item"><img class="img-no-gap" src="images/img2.jpg" alt="Mobile App" width="370" /></li>
+                    <li class="item"><img class="img-no-gap" src="images/img3.jpg" alt="Design" width="370" /></li>
                 </ul>
                 </div>
             </section>
             
             <!-- Наша команда -->
-            <section class="team">
+            <section class="team section">
                 <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="list">
                     <div class="card">
-                        <li>
+                        <li class="item">
                             <img class="img-no-gap" src="images/imgpd.jpg" alt="Product Designer" width="270" />
                             <h3 class="member-title product-designer">Игорь Демьяненко</h3>
                             <p class="text">Product Designer</p>
                         </li>
                     </div>
                     <div class="card">
-                        <li>
+                        <li class="item">
                             <img class="img-no-gap" src="images/imgfd.jpg" alt="Frontend Developer" width="270" />
                             <h3 class="member-title frontend-developer">Ольга Репина</h3>
                             <p class="text">Frontend Developer</p>
                         </li>
                     </div>
                     <div class="card">
-                        <li>
+                        <li class="item">
                             <img class="img-no-gap" src="images/imgmark.jpg" alt="Marketing" width="270" />
                             <h3 class="member-title marketing">Николай Тарасов</h3>
                             <p class="text">Marketing</p>
                         </li>
                     </div>
                     <div class="card">
-                        <li>
+                        <li class="item">
                             <img class="img-no-gap" src="images/imguid.jpg" alt="UI Designer" width="270" />
                             <h3 class="member-title designer">Михаил Ермаков</h3>
                             <p class="text">UI Designer</p>
@@ -112,11 +112,11 @@
             <address>
                 <ul class="address list">
                     <!-- Ссылка на на карту с указанным адресом -->
-                    <li><a class="map" href="https://goo.gl/maps/9BJSukgXdeU1Tu847" target="_blank" rel="noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="item"><a class="map" href="https://goo.gl/maps/9BJSukgXdeU1Tu847" target="_blank" rel="noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <!-- Ссылка на адрес электронной почты  -->
-                    <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="item"><a class="link" href="mailto:info@example.com">info@example.com</a></li>
                     <!-- Ссылка на телефонный номер -->
-                    <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </address>
             </div>
