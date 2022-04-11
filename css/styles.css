@@ -94,6 +94,25 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.container .section {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Logo */
 
 .logo-header {
@@ -290,11 +309,6 @@ p {
 
 .features .title {
   color: var(--secondary-text-color);
-  /* 
-  width: 376px;
-  height: 42px;
-  left: 612px;
-  top: 969px; */
 
   font-size: 36px;
   line-height: 1.16;
@@ -324,14 +338,29 @@ p {
 /* Work */
 
 .project {
+  display: flex;
+  flex-wrap: wrap;
+
   width: 370px;
-  /* border-bottom: 1px solid #eeeeee; */
+
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.project:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btm-border {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+
+  padding: 20px 24px;
 }
 
 .work .title {
@@ -430,8 +459,6 @@ p {
 .buttons {
   display: flex;
   justify-content: center;
-
-  padding-top: 94px;
 }
 
 .buttons .item + .item {
