@@ -14,19 +14,6 @@
   --footer-color: #2f303a;
 }
 
-/* Основной цвет текста #757575 */
-
-/* Вторичный цвет текста #212121 */
-
-/* Белый #FFFFFF */
-
-/* Акцент #2196F3 */
-
-/* Фон основной #E5E5E5 */
-
-/* Фон шапка #2F303A */
-
-/* Вторичный фон #F5F4FA */
 header {
   border-bottom: 1px solid #ececec;
   background: var(--white-color);
@@ -43,11 +30,6 @@ body {
 }
 
 footer {
-  /* width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px; */
-
   background: var(--footer-color);
 }
 
@@ -116,12 +98,6 @@ p {
 /* Logo */
 
 .logo-header {
-  /* position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px; */
-
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -158,11 +134,6 @@ p {
 }
 
 .logo-footer {
-  /* width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px; */
-
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -252,11 +223,7 @@ p {
 
 .hero {
   background-color: var(--footer-color);
-
-  /* width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px; */
+  text-align: center;
 }
 
 .hero-heading {
@@ -293,11 +260,6 @@ p {
 .button-center {
   /* Заказать услугу */
 
-  /* width: 136px;
-  height: 30px;
-  left: 732px;
-  top: 440px; */
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -306,6 +268,23 @@ p {
 }
 
 /* Features */
+
+.features .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 270px;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.feature-card:nth-child(4n) {
+  margin-right: 0px;
+}
 
 .features .title {
   color: var(--secondary-text-color);
@@ -324,6 +303,8 @@ p {
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
+
+  margin-bottom: 10px;
 }
 
 .features .text {
@@ -363,6 +344,13 @@ p {
   padding: 20px 24px;
 }
 
+.work-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  margin-right: 30px;
+}
+
 .work .title {
   font-size: 36px;
   line-height: 1.16;
@@ -373,9 +361,18 @@ p {
 }
 
 .work .list {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
+.list.item::nth-child(3n) {
+  margin-right: 0px;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0px;
+}
 /* Team */
 
 .team {
@@ -404,6 +401,9 @@ p {
 
 .team .list {
   margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .member-title {
@@ -420,29 +420,7 @@ p {
   color: var(--secondary-text-color);
 }
 
-.product-designer {
-  /* width: 152px;
-  left: 275px; */
-}
-.frontend-developer {
-  /* width: 110px;
-  left: 596px; */
-}
-.marketing {
-  /* width: 138px;
-  left: 882px; */
-}
-.designer {
-  /* width: 135px;
-  left: 1183px; */
-}
-
 .team .text {
-  /* width: 148px;
-  height: 19px;
-  left: 285px;
-  top: 1954px; */
-
   font-size: 16px;
   line-height: 1.18;
 
@@ -450,9 +428,20 @@ p {
   letter-spacing: 0.03em;
 }
 
-/* Не уверен нужно ли делать для кажого текста <p> в class="team" разные width & left
+.list .card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-right: 30px;
+}
 
-*/
+.card:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.bottom-card {
+  padding: 30px 0px;
+}
 
 /* Button */
 
