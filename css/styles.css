@@ -20,13 +20,12 @@ header {
 }
 
 body {
-  margin: 0;
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  letter-spacing: 00.03em;
+  letter-spacing: 0.03em;
 }
 
 footer {
@@ -36,7 +35,7 @@ footer {
 address {
   font-style: normal;
 
-  line-height: 24px;
+  line-height: 1.71;
   margin-top: 20px;
 }
 
@@ -176,10 +175,6 @@ p {
   display: flex;
 }
 
-.site-nav .item {
-  /* background-color: tomato; */
-}
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -231,7 +226,7 @@ p {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -311,7 +306,6 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
 
   letter-spacing: 0.03em;
 }
@@ -373,6 +367,7 @@ p {
 .work-item:nth-child(3n) {
   margin-right: 0px;
 }
+
 /* Team */
 
 .team {
@@ -381,7 +376,6 @@ p {
 
 .team .card {
   width: 270px;
-  /* height: 368px; */
 
   background: #ffffff;
 
@@ -407,7 +401,6 @@ p {
 }
 
 .member-title {
-  height: 19px;
   top: 1925px;
 
   font-weight: 500;
@@ -460,10 +453,6 @@ p {
   color: var(--secondary-text-color);
   border-radius: 4px;
 
-  /* padding: 6px 22px; */
-  /* width: 145px;
-  height: 38px; */
-
   text-align: center;
 
   font-family: "Roboto";
@@ -482,39 +471,6 @@ p {
 .button:focus {
   background-color: var(--accent-color);
   color: var(--secondary-background-color);
-}
-
-/* Buttons from portfolio.html    
-
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); 
-
-
-*/
-
-.button.all {
-  /* width: 73px;
-  left: 495px; */
-}
-
-.button.site {
-  /* width: 128px;
-  left: 576px; */
-}
-
-.button.app {
-  /* width: 145px;
-  left: 712px; */
-}
-
-.button.design {
-  /* width: 103px;
-  left: 865px; */
-}
-
-.button.marketing {
-  /* width: 130px;
-  left: 976px; */
 }
 
 .button.marketing:hover,
@@ -546,11 +502,6 @@ p {
 /* Projects */
 
 .title {
-  /* width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 576px; */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -562,7 +513,6 @@ p {
   color: var(--secondary-text-color);
 }
 
-/* .portfolio-title, */
 .features .title,
 .projects-title,
 .filters .title {
@@ -592,15 +542,19 @@ p {
 }
 
 .address .link {
-  /* font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em; */
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
 .address .link:focus {
+  color: var(--accent-color);
+}
+.project-cards a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.project-cards a:hover,
+.project-cards a:focus {
   color: var(--accent-color);
 }
