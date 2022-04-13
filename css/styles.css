@@ -425,12 +425,6 @@ p {
   letter-spacing: 0.03em;
 }
 
-/* .list .card {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 30px;
-} */
-
 .list .item-card {
   margin-right: 30px;
 }
